@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Task Management</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; background: #f3f6fa; color: #243247; }
+    header { background: #173b65; color: white; padding: 28px 8%; }
+    header h1 { margin: 0 0 8px; }
+    main { max-width: 950px; margin: 35px auto; padding: 0 20px; }
+    .panel { background: white; padding: 24px; border-radius: 12px; box-shadow: 0 4px 16px #152b4512; margin-bottom: 20px; }
+    h2 { margin-top: 0; color: #173b65; }
+    .links a { display: inline-block; margin: 6px 10px 6px 0; padding: 10px 14px; background: #e8f0fa; color: #173b65; border-radius: 7px; text-decoration: none; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 12px; border-bottom: 1px solid #e6ebf1; text-align: left; }
+    th { background: #f5f8fc; }
+    footer { text-align: center; padding: 20px; color: #637187; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Employee Task Management</h1>
+    <p>A simple application to manage and track employee tasks.</p>
+  </header>
+  <main>
+    <section class="panel">
+      <h2>Welcome</h2>
+      <p>This page is served as a static HTML file using Node.js's built-in File System (FS) module.</p>
+      <div class="links">
+        <a href="/">Home route</a>
+        <a href="/tasks">View tasks JSON</a>
+        <a href="/about">About application</a>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>Sample Employee Tasks</h2>
+      <table>
+        <thead><tr><th>ID</th><th>Task</th><th>Assigned To</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Develop Login Page</td><td>Rahul Sharma</td><td>Pending</td></tr>
+          <tr><td>2</td><td>Design Dashboard</td><td>Priya Verma</td><td>In Progress</td></tr>
+          <tr><td>3</td><td>Write API Documentation</td><td>Amit Kumar</td><td>Completed</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer>Full Stack Development – Node.js Lab Examination</footer>
+</body>
+</html>
